@@ -1,7 +1,9 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import LoginPage from "./pages/LoginPage/LoginPage";
-import SignupPage from "./pages/SignUpPage/SignupPage";
+import LoginPage from "./pages/Login/LoginPage";
+import RegistrationPage from "./pages/Registration/RegistrationPage";
+import Navbar from "./pages/shared/Navbar/Navbar";
+import Footer from "./pages/shared/Footer/Footer";
 
 function App() {
   const routers = createBrowserRouter([
@@ -14,8 +16,8 @@ function App() {
           element: <LoginPage />,
         },
         {
-          path: "/sign-up",
-          element: <SignupPage />,
+          path: "/registration",
+          element: <RegistrationPage />,
         },
       ],
     },

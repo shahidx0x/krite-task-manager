@@ -1,0 +1,58 @@
+.flex{
+    display: flex;
+  }
+  
+  .gap{
+    gap:20px
+  }
+  .border {
+    border:1px solid black;
+  }
+  .border-g {
+    border:1px solid green;
+  }
+  
+  .login-left-side{
+    width: 60%;
+    height: 100vh;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #18181b;
+  }
+  .login-right-side{
+    width: 40%;
+    height: 100vh;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #09090b;
+  }
+  .lls-header{
+    color:#f4f4f4fa;
+  
+    font-weight: bold;
+    padding: 20px;
+    font-size: 3rem;
+  }
+  
+  .lls-icon{
+    width: 10rem;
+    height: 10rem;
+  
+  }
+  .lls-header-group{
+    padding: 20px;
+  }
+  
+  .lls-quote{
+    color:#f4f4f49d;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    padding-left: 60px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+  }
+  
+  .lls-quote-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 150px; 
+  }
