@@ -1,58 +1,98 @@
 .flex{
-    display: flex;
-  }
-  
-  .gap{
-    gap:20px
-  }
-  .border {
-    border:1px solid black;
-  }
-  .border-g {
-    border:1px solid green;
-  }
-  
-  .login-left-side{
-    width: 60%;
-    height: 100vh;
-    border-radius: 20px 0px 0px 20px;
-    background-color: #18181b;
-  }
-  .login-right-side{
-    width: 40%;
-    height: 100vh;
-    border-radius: 0px 20px 20px 0px;
-    background-color: #09090b;
-  }
-  .lls-header{
-    color:#f4f4f4fa;
-  
-    font-weight: bold;
-    padding: 20px;
-    font-size: 3rem;
-  }
-  
-  .lls-icon{
-    width: 10rem;
-    height: 10rem;
-  
-  }
-  .lls-header-group{
-    padding: 20px;
-  }
-  
-  .lls-quote{
-    color:#f4f4f49d;
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    padding-left: 60px;
-    font-weight: lighter;
-    font-size: 1.5rem;
-  }
-  
-  .lls-quote-container{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 150px; 
-  }
+  display: flex;
+}
+
+.gap{
+  gap:20px
+}
+.border {
+  border:1px solid black;
+}
+.border-g {
+  border:1px solid green;
+}
+
+.login-left-side{
+  width: 60%;
+  height: 100vh;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #18181b;
+}
+.login-right-side{
+  width: 40%;
+  height: 100vh;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #09090b;
+}
+.lls-header{
+  color:#f4f4f4fa;
+
+  font-weight: bold;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.lls-icon{
+  width: 10rem;
+  height: 10rem;
+
+}
+.lls-header-group{
+  padding: 20px;
+}
+
+.lls-quote{
+  color:#f4f4f49d;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  padding-left: 60px;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.lls-quote-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 150px; 
+}
+.llr-div-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  color:#efeff0
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.input-login{
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.input-password{
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.input-button{
+  padding: 10px;
+  width: 104%;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.registration-click{
+  color : burlywood;
+  cursor: pointer;
+}

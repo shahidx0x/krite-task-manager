@@ -2,8 +2,9 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import LoginPage from "./pages/Login/LoginPage";
 import RegistrationPage from "./pages/Registration/RegistrationPage";
-import Navbar from "./pages/shared/Navbar/Navbar";
-import Footer from "./pages/shared/Footer/Footer";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { Toaster } from "react-hot-toast";
+import ProtectedRoutes from "./components/ProtectedRoutes/ProtectedRoutes";
 
 function App() {
   const routers = createBrowserRouter([
@@ -19,6 +20,14 @@ function App() {
           path: "/registration",
           element: <RegistrationPage />,
         },
+        {
+          path: "/dashbord",
+          element: (
+            <ProtectedRoutes>
+              <DashbordLayout />
+            </ProtectedRoutes>
+          ),
+        },
       ],
     },
   ]);
@@ -30,7 +39,19 @@ export default App;
 function Root() {
   return (
     <>
+      <Toaster position="top-right" reverseOrder={false} />
       <Outlet />
+    </>
+  );
+}
+
+function DashbordLayout() {
+  return (
+    <>
+      <div className="flex">
+        <Sidebar />
+        <Outlet />
+      </div>
     </>
   );
 }
